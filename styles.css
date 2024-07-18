@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fundo branco */
+}
+
+header {
+    background-color: #000; /* Preto */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    max-height: 140px;
+    width: auto;
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000; /* Borda preta */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333; /* Cinza escuro */
+    color: #fff; /* Branco */
+    border: none;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000; /* Preto */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1; /* Cinza claro */
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #000; /* Preto */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #000; /* Preto */
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 10px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #f9f9f9; /* Fundo branco */
+}
+
+section ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 20px;
+}
+
+aside h3 {
+    color: #000; /* Preto */
+}
+
+aside select, aside input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 20px;
+}
+
+.highlights {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #333; /* Cinza escuro */
+    color: #fff; /* Branco */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.highlight-btn:hover {
+    background-color: #000; /* Preto */
+}
+
+.avaliacoes {
+    margin-bottom: 100px; /*rodapé */
+}
+
+
+/*estrelas */
+.star-rating .star {
+    font-size: 2rem; /* tamanho */
+    position: relative;
+    display: inline-block;
+}
+
+.star-rating .star.full {
+    color: #ffd700;
+}
+
+.star-rating .star.empty {
+    color: #ccc;
+}
+
+.star-rating .star.half::before {
+    content: '\2605'; /* Código da estrela */
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
+ /*ícones e botão de contato */
+.social-contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-button i {
+    margin-right: 8px;
+}
+
+.social-icon {
+    color: #333; /* Cor padrão para os ícones sociais */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0073e6; /* Cor quando passa o mouse */
+}                                                     

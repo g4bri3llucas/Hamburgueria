@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Gourmet</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Página Inicial -->
+    <header>
+        <div class="logo-container">
+            <img src="imagens/Logo escura-Photoroom.png" alt="Logo da Hamburgueria" class="logo">
+        </div>
+        <!-- Barra de Pesquisa -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar...">
+            <button class="btn" onclick="search()">Buscar</button>
+        </div>
+    </header>
+    <nav>
+        <!-- Menu de Navegação -->
+        <ul>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- Destaques -->
+        <h2>Destaques</h2>
+        <div class="highlights">
+            <button class="highlight-btn" onclick="filterProducts('promocoes')">Promoções</button>
+            <button class="highlight-btn" onclick="filterProducts('novidades')">Novidades</button>
+            <button class="highlight-btn" onclick="filterProducts('mais_vendidos')">Mais Vendidos</button>
+            <button class="highlight-btn" onclick="filterProducts('recomendados')">Recomendados</button>
+        </div>
+    </section>
+
+    <!-- Página de Produtos -->
+    <section>
+        <h2>Nosso Cardápio</h2>
+        <!-- Lista de Produtos -->
+        <ul>
+            <li>
+                <img src="imagens/1.png" alt="X-Picanha">
+                <h3>X-Picanha</h3>
+                <p>Preço: R$ 29,90</p>
+                <p>Avaliação: 5 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('x-picanha')">Fazer pedido</button>
+            </li>
+            <li>
+                <img src="imagens/2.png" alt="X-Bacon">
+                <h3>X-Bacon</h3>
+                <p>Preço: R$ 34,90</p>
+                <p>Avaliação: 4.5 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('x-bacon')">Fazer pedido</button>
+            </li>
+            <li>
+                <img src="imagens/3.png" alt="X-Salada">
+                <h3>X-Salada</h3>
+                <p>Preço: R$ 31,90</p>
+                <p>Avaliação: 4 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('x-salada')">Fazer pedido</button>
+            </li>
+            <li>
+                <img src="imagens/4.png" alt="Coxinha">
+                <h3>Coxinha</h3>
+                <p>Preço: R$ 22,80</p>
+                <p>Avaliação: 5 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('coxinha')">Fazer pedido</button>
+            </li>
+            <li>
+                <img src="imagens/5.png" alt="Combo Duplo">
+                <h3>Combo Duplo</h3>
+                <p>Preço: R$ 65,90</p>
+                <p>Avaliação: 5 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('combo_duplo')">Fazer pedido</button>
+            </li>
+            <li>
+                <img src="imagens/6.png" alt="Combo Triplo">
+                <h3>Combo Triplo</h3>
+                <p>Preço: R$ 79,90</p>
+                <p>Avaliação: 5 estrelas</p>
+                <button class="btn" onclick="redirectToProductPage('combo_triplo')">Fazer pedido</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="social-contact-container">
+            <a href="https://wa.me/seunumero" class="contact-button"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/seuinstagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/seufacebook" class="social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2024 Hamburgueria Gourmet. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

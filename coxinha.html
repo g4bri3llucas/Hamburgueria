@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coxinha</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="../imagens/Logo escura-Photoroom.png" alt="Logo da Hamburgueria" class="logo">
+    </div>
+</header>
+    <!-- Página Individual do Produto -->
+    <section>
+        <h2>Coxinha</h2>
+        <img src="../imagens/4.png" alt="Coxinha">
+        <p>Coxinha</p>
+        <p>Preço: R$ 22,00</p>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" value="1" min="1">
+        <button class="btn" onclick="comprar('Coxinha', 22.00)">Realizar Compra</button>
+        <!-- Avaliações e Comentários -->
+        <h3>Avaliações</h3>
+        <div class="avaliacoes">
+            <div class="avaliacao">
+                <p>Avaliação 1: Maravilhoso!</p>
+                <div class="star-rating">
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                </div>
+            </div>
+            <div class="avaliacao">
+                <p>Avaliação 2: Saboroso.</p>
+                <div class="star-rating">
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                    <span class="star full">&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Rodapé -->
+        <p>&copy; 2024 Hamburgueria Gourmet. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
